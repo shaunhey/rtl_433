@@ -245,6 +245,7 @@ endif()
 
 add_executable(rtl_433 rtl_433.c)
 target_link_libraries(rtl_433 r_433)
+target_link_libraries(rtl_433 ssl crypto)
 
 # target_compile_definitions was only added with CMake 2.8.11
 if(THREADS_HAVE_PTHREAD_ARG)
